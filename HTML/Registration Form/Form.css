@@ -1,0 +1,5 @@
+div {
+	display: inline-grid;
+	grid-template-columns: 100px 200px;
+	grid-template-rows: 30px 30px 30px 30px 30px 30px ;
+}

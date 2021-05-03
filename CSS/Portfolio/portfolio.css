@@ -1,0 +1,179 @@
+* {
+	padding: 0;
+	margin: 0;
+	/* learn about how to calcoulate the total margin and height*/
+	/*make suer to allocate the css elment style like addrace start 
+	from the container till the element it self*/
+}
+
+#container {
+	background-color: rgb(222, 208, 221, 0.4);
+	width: 874px;
+	height: 900px;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+h1 {	
+	font-family: cursive;
+	padding-left: 20px;
+}
+h2 {
+	padding-right: 20px;
+}
+
+content {
+	background: linear-gradient(rgb(26, 0, 26), rgb(26, 0, 26, 0.6), rgb(26, 0, 26));
+	width: 874px;
+	height: 937px;
+	display: inline-block;	
+}
+
+img {
+		width: 365px;
+		margin: 15px;
+		border: 6px solid rgb(214, 214, 194);
+}
+#about {
+	background: linear-gradient( to left, rgb(222, 208, 221), rgb(255, 255, 255));
+	display: inline-block;
+	vertical-align: top;
+	height: 252px;
+	width: 448px;
+	margin-right: 15px;
+	margin-top: 15px;
+
+}
+
+#about h3{
+	background: linear-gradient(rgb(137, 135, 148, 0.5), rgb(137, 135, 148), rgb(137, 135, 148, 0.5));
+	color: white;
+	font-family: sans-serif;
+	padding: 10px;
+}
+#about p{
+	margin: 10px;
+	font-family: "Gill Sans", sans-serif;
+	font-size: 15px;
+}
+
+#about a {
+	margin: 10px;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+section {
+	width: 271px;
+	height: 627px;
+	/*margin-top: 15px;*/
+	background: linear-gradient(to left, rgb(222, 208, 221), rgb(255, 255, 255));
+	
+}
+#section {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: inherit; 
+}
+
+section h3{
+	background: linear-gradient(rgb(137, 135, 148, 0.5), rgb(137, 135, 148), rgb(137, 135, 148, 0.5));
+	color: white;
+	font-family: sans-serif;
+	padding: 10px;
+}
+section .main { 
+	width: 271px;
+	margin: 0;
+	border: none;
+}
+
+#section p {
+	font-size: 16px;
+	text-align: justify;
+	margin: 10px;
+	font-family: "Gill Sans", sans-serif;
+}
+#section h4 {
+	background: linear-gradient(rgb(137, 135, 148, 0.5), rgb(137, 135, 148), rgb(137, 135, 148, 0.5));
+	color: white;
+	font-family: sans-serif;
+	padding: 10px;
+}
+
+#section .p {
+	width: 268px;
+	height: 230px;	
+}
+
+.image img {
+	width: 40px;
+    height: 41px;
+	border: none;
+	margin: 5px;
+	
+}
+
+#section .image{
+	padding: 5px;
+    flex-direction: row;
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    width: 260px;
+    height: 100px;
+}
+
+button {
+	width: 103px;
+    height: 28px;
+	font-size: 13px;
+	padding: 2px;
+    margin-left: 79px;
+    font-weight: 700;
+	background-color: rgb(64, 125, 97);
+	border-radius: 8px;
+	color: white;	
+}
+footer {
+	background-color: rgb(222, 208, 221, 0.4);
+	color: rgb(87, 76, 66);
+	width: 874px;
+	height: 67px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+}
+
+footer p {
+	margin: 5px;
+}
+
+#footer {
+	display: flex;
+	justify-content: center;
+	
+
+}
+
+#footer img {
+	width: 20px;
+	height: 20px;
+	border: none;
+	margin: 2px;
+	
+
+}
+
+#footer a {
+	color: rgb(87, 76, 66);
+	font-style: italic;
+	vertical-align: bottom;
+	margin-left: 4px;
+	margin-right: 2px;
+}
+

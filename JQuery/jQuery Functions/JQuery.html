@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>  jQuery Functions </title>
+    <style>
+        * {
+            margin: 30px;
+        }
+        #last div {
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#add-class").click(function(){
+                $("p").addClass("red");
+                $("#one hr").toggle();
+            });
+            $("#slid").click(function(){
+                $("img").slideToggle("slow")
+            });
+            $("#append").click(function(){
+                $("#last").append("<p> This is a new paragraph!")
+            })
+            $("#hide").hover(function(){
+                $("#one p").hide();
+            }, function(){
+                $("#one p").show();
+            })
+            $("#slid-up").click(function(){
+                $("#two p").slideUp();
+            })
+            $("#slid-down").click(function(){
+                $("#two p").slideDown();
+            })
+            $("#toggle").click(function(){
+                $("#last div").fadeOut(3000);
+                $("#last div").fadeIn("slow");
+            })
+            $("#last div").click(function(){
+                $("#last div").text(alert("This is .text()"));
+                $("#last div").html("<p> This is .html()");
+                $("#last div p").before("Before");
+                $("#last div p").after("after");
+                $("#last div").val(alert("this box width: "+ $("#last div").attr("style")));
+                
+                
+
+            })
+        });
+    </script>
+</head>
+<body>
+    <div id="one">
+        <h1 id="hide"> Add Class </h1>
+        <p> Click the botton to add class "red"</p>
+        <button id="add-class"> Add Class </button>
+        <hr>
+    </div>
+    <div id="two">
+        <h1 id="show"> Slid Toggle </h1>
+        <p> Click the botton to slid toggle</p>
+        <img src="Celery.jpg" alt="color">
+        <button id="slid">SlidToggle </button>
+        <button id="slid-up">Slid-up</button>
+        <button id="slid-down">Slid-down</button>
+        <hr>
+    </div>
+    <div id="last">
+        <h1 id="toggle"> Append </h1>
+        <p> Click the botton to append</p>
+        <div style="width: 200px;"></div>
+        <button id="append"> Append </button>
+        <hr>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,210 @@
+//predict 1
+function a(){
+    return 35;
+}
+console.log(a())
+/* My prediction
+35
+*/
+Output == 35
+
+//predict 2
+function a(){
+    return 4;
+}
+console.log(a()+a());
+/* My prediction
+8
+*/
+Output == 8
+
+//predict 3
+function a(b){
+    return b;
+}
+console.log(a(2)+a(4));
+/* My prediction
+6
+*/
+Output == 6
+
+//predict 4
+
+function a(b){
+    console.log(b);
+    return b*3;
+}
+console.log(a(3));
+/* My prediction
+3
+9
+*/
+Output == 3,9
+
+//predict 5
+
+function a(b){
+   return b*4;
+   console.log(b);
+}
+console.log(a(10));
+/* My prediction
+40
+*/
+Output == 40
+
+//predict 6
+function a(b){
+    if(b<10) {
+        return 2;
+    }
+    else     {
+        return 4;
+    }
+    console.log(b);
+}
+console.log(a(15));
+/* My prediction
+4
+*/
+Output ==4
+
+//predict 7
+function a(b,c){
+    return b*c;
+}
+console.log(10,3);
+console.log( a(3,10) );
+/* My prediction
+10
+3
+30
+*/
+Output == 10 3
+	  30
+
+//predict 8
+function a(b){
+    for(var i=0; i<10; i++){
+        console.log(i);
+    }
+    return i;
+}
+console.log(3);
+console.log(4);
+/* My prediction
+3
+4
+*/
+Output == 3
+	  4
+
+//predict 9
+function a(){
+    for(var i=0; i<10; i++){
+        i = i +2;
+        console.log(i);
+    }
+}
+a();
+
+/* My prediction
+2
+5
+8
+11
+*/
+Output
+2
+5
+8
+11
+
+//predict 10
+function a(b,c){
+    for(var i=b; i<c; i++) {
+       console.log(i);
+   }
+   return b*c;
+}
+a(0,10);
+console.log(a(0,10));
+/* My prediction
+(0
+1
+2
+3
+4
+5
+6
+7
+8
+9) twice
+0
+*/
+Output is the same
+
+//predict 11
+function a(){
+    for(var i=0; i<10; i++){
+       for(var j=0; j<10; j++){
+           console.log(j);
+       }
+       console.log(i);
+    }
+}
+/* My prediction
+
+*/
+Output
+
+//predict 12
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+}
+console.log(z);
+/* My prediction
+10
+*/
+Output == 10
+
+//predict 13
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+}
+a();
+console.log(z);
+/* My prediction
+15
+10
+*/
+Output the same
+
+//predict 14
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+    return z;
+}
+z = a();
+console.log(z);
+/* My prediction
+15
+15
+*/
+Output the same
+
+
+
+
+
+
+
+
+
+

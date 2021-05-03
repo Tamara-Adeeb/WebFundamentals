@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Assignment: Disappearing Ninja </title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <style>
+        img {
+            width: 338px;
+            height: 338px;;
+        }
+        button {
+            display: block;
+            width: 200px;
+            height: 50px;
+            margin: 10px;
+            background-color: chocolate;
+            font-weight: bold;
+            color: cornsilk;
+            border-radius: 10px;
+
+        }
+    </style>
+    </head>
+    <body>
+        <img src="Apple.jpg" alt="Apple" style="width:338;"/>
+        <img src="Blueberries.jpg" alt="Blueberries" style="width:338;"/>
+        <img src="Coconut.jpg" alt="Coconut" style="width:338;"/>
+        <img src="Cookies.jpg" alt="Cookies" style="width:338;"/>
+        <img src="Grapes.jpg" alt="Grapes" style="width:338;"/>
+        <img src="pear.jpg" alt="pear" style="width:338;"/>
+        <img src="pinapple.jpg" alt="pinapple" style="width:338;"/>
+        <img src="Watermelon.jpg" alt="Watermelon" style="width:338;"/>
+        <button> Restore </button>
+        <script>
+            $("img").click(function(){
+                $(this).hide();
+            })
+            $("button").click(function(){
+                $("img").show();
+            })
+        </script>
+    </body>
+</html>

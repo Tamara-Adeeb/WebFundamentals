@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Hover In/Out </title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <img src="Golden Light.jpg" data-alt-src="black.jpg" alt="Golden Light Color"/>
+    <img src="Light Green.jpg" data-alt-src="HTS.jpg" alt="Light Green Color"/>
+    <img src="Orange.jpg" data-alt-src="Vintage Kraft.jpg" alt="Orange Color"/>
+    <img src="Red Earth.jpg" data-alt-src="Olive.jpg" alt="Red Earth Color"/>
+</body>
+<script>
+    $("img").hover(function(){
+        var src = $(this).attr('src');
+        
+        $(this).attr("src", $(this).attr("data-alt-src"));
+        $(this).attr("data-alt-src", src);
+    },function(){
+        console.log("123")
+        var x = $(this).attr("src");
+        $(this).attr("src", $(this).attr("data-alt-src"));
+        $(this).attr("data-alt-src",x);
+        console.log(x);
+        
+    });
+    
+</script>
+</html>

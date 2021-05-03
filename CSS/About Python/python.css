@@ -1,0 +1,225 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family:  "Gill Sans", sans-serif;
+	font-weight: 500px;
+}
+#container {
+	width: 900px;
+	height: 817px;
+	background-color: rgb(38, 81, 117);
+	
+
+
+}
+
+header{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+header img {
+    width: 295px;
+    margin-top: 5px;
+    margin-left: 10px;
+
+}
+
+header #search p{
+	display: inline-block;
+	color: white;
+	font-size: 11px;
+
+}
+header #search #text-size{
+	margin-right: 42px;
+	margin-bottom: 3px;
+}
+header #search a {
+	color: rgb(250, 199, 0);
+	font-size: 11px;
+
+}
+header #search{
+	text-align: right;
+	margin-right: 9px;
+}
+
+header #search form {
+	background-color: rgb(68, 68, 68);
+	box-shadow: 3px 3px rgb(49, 46, 44);
+	width: 242px;
+    height: 39px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header #search form input {
+	margin-right: 3px;
+    margin-top: 2px;
+	height: 35px;
+	border-right: 1px solid rgb(108, 108, 108);
+    border-bottom: 1px solid rgb(108, 108, 108);
+    border-left: 1px solid rgb(192, 192, 192);
+    border-top: 1px solid rgb(192, 192, 192);
+    color: gray;
+}
+header #search form button {
+	background-color: rgb(38, 81, 117);
+	border-right: 1px solid rgb(108, 108, 108);
+    border-bottom: 1px solid rgb(108, 108, 108);
+    border-left: 1px solid rgb(192, 192, 192);
+    border-top: 1px solid rgb(192, 192, 192);
+	border-radius: 5px;
+	width: 39px;
+    height: 30px;
+    margin-right: 10px;
+	color: white;
+}
+nav {
+	border-right: 1px solid black;
+    border-bottom: 1px solid black;
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 780px;
+    height: 46px;
+    border-radius: 5px;
+    background-color: rgb(73, 127, 171);
+    margin-left: 47px;
+    margin-top: 25px;
+}
+nav a {
+	text-decoration: none;
+	color: white;
+	font-size: 21px;
+}
+
+content #upper {
+	height: 300px;
+	width: 900px;
+}
+
+content #list {
+	margin-left: 33px;
+    margin-top: 35px;
+	height: 300px;
+	width: 200px;
+	display: inline-block;
+}
+
+content #list ul {
+    text-align: center;
+	list-style: none;
+    line-height: 26px;
+    vertical-align: top;  
+}
+content #list ul a{
+    color: white;
+    padding-left: 5px;
+}
+
+content #arrow li::before{
+	white-space: ;
+	font-weight: bold;
+	font-size: x-small;
+	color: rgb(255, 211, 67);
+	padding-left: 5px;
+	text-align: left;
+	content: "\00BB";
+}
+
+content #paragraph {
+	display: inline-block;
+	height: 319px;
+	width: 400px;
+	vertical-align: bottom;
+	margin-top: 5px;
+	
+
+}
+
+content #paragraph p {
+	color: white;
+	text-align: center;
+	width: 629px;
+    font-size: 15px;
+    margin-top: 8px;
+	
+}
+
+content #paragraph ul {
+	color: rgb(255, 211, 67);
+	font-style: italic;
+	line-height: 30px;
+	text-align: center;
+    list-style-position: inside;
+    list-style-type: none;
+    margin-left: 167px;
+    width: 300px;
+}
+
+content #lower {
+background-color: white;
+width: 900px;
+height: 239px;
+display: flex;
+margin-top: 20px;
+}
+
+content #lower section {
+	text-align: center;
+	margin-left: 10px;
+	padding: 10px;
+}
+
+content #lower section #first-line{
+	margin-left: 58px;
+}
+
+hr {
+	background-color: rgb(99, 157, 205);
+	margin: 5px;
+	height: 2px;
+	width: 367px;
+}
+content #lower section ul {
+	width: 296px;
+	margin-top: 5px;
+    margin-left: 72px;
+    list-style: none;
+    color: rgb(147, 187, 221);	 
+}
+content #lower section ul li{
+	padding-left: 10px;
+}
+content #lower section ul li::marker {
+	content: "■"; 
+	color: black;
+	font-weight: bold;
+	display: inline-block;	
+}
+
+footer p {
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 15px;
+	padding: 10px;
+}
+
+footer span {
+	display: block;
+	font-size: 11px;
+
+}
+
+footer {
+	margin-top: 19px;
+	text-align: center;
+	color: rgb(119, 169, 212);
+	background: linear-gradient(to top,#2d6798, rgb(38, 81, 117));
+	width: 900px;
+	height: 72px;
+}

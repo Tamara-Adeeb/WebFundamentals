@@ -1,0 +1,31 @@
+.nav {
+	display: flex;
+	width: auto;
+	height: 100px;
+	background-color: rgb(102, 179, 255);
+	color: white;
+	align-items: center;
+	justify-content: space-around;
+	
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+
+ul {
+	/*background-color: black;*/
+	width: 900px;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+
+}
+
+img {
+	width: 70px;
+	margin-left: -20xpx;
+
+}

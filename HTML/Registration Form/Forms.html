@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Registration Form </title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1> My Registration Form  </h1>
+	<form action="#">
+		<table>
+			<tr>
+				<td><label for="fname"> First Name:</label></td>
+				<td><input type="text" id="fname"></td>
+			</tr>
+			<tr>
+				<td><label for="lname"> Last Name:</label></td>
+				<td><input type="text" id="lname"></td>
+			</tr>
+			<tr>
+				<td><label for="email"> Email:</label></td>
+				<td><input type="Email" id="email"></td>
+			</tr>
+			<tr>
+				<td><label for="password"> Password:</label></td>
+				<td><input type="password" id="password" ></td>
+			</tr>
+			<tr>
+				<td><label for="pwconfirm"> PW Confirm:</label></td>
+				<td><input type="password" id="pwconfirm" ></td>
+			</tr>
+			<tr>
+				<td><label for="birthday">  Birthday:</label></td>
+				<td><input type="date" id="birthday"></td>
+			</tr>
+		</table><br/>
+		<input type="radio" id="male">
+		<label for="male"> male</label>
+		<input type="radio" id="female">
+		<label for="female"> Female</label>
+		<input type="radio" id="other">
+		<label for="other"> Other </label> <br/><br/>
+		<label> A short description about yourself</label><br/>
+		<textarea style="width:300px;height:100px;"></textarea><br/><br/>
+		<label for="language"> Favorite Language</label>
+		<select id="language">
+			<option selected> JavaScript </option>
+			<option> Java </option>
+			<option> python</option>
+		</select> <br/><br/>
+		<input type="submit">	
+	</form>
+</body>
+</html>
